@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1131.2,814.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:uasc="clr-namespace:UiPath.Activities.System.Collections;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1131.2,1379.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:uasc="clr-namespace:UiPath.Activities.System.Collections;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="29">
       <x:String>System.Activities</x:String>
@@ -77,7 +77,7 @@
       <AssemblyReference>System.Private.Xml</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Ticket Price" sap:VirtualizedContainerService.HintSize="559.2,749.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Ticket Price" sap:VirtualizedContainerService.HintSize="559.2,1314.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="numberOfTicket" />
       <Variable x:TypeArguments="x:String" Name="userInput" />
@@ -91,13 +91,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog - Film Seçimi" sap:VirtualizedContainerService.HintSize="496.8,52.8" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Film Seçiniz" Options="[{&quot;İllegal Hayatlar - (120₺)&quot;,&quot;Lohusa - (180₺)&quot;,&#xA;&quot;Atatürk 1881-1919 - (220₺)&quot;,&quot;Hatıran Yeter - (190₺)&quot;,&#xA;&quot;Kolpaçino 4 4'lük - (180₺)&quot;&#xA;}]" Title="Filmler">
+    <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog - Film Seçimi" sap:VirtualizedContainerService.HintSize="496.8,295.2" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Film Seçiniz" Options="[{&quot;İllegal Hayatlar - (120₺)&quot;,&quot;Lohusa - (180₺)&quot;,&#xD;&#xA;&quot;Atatürk 1881-1919 - (220₺)&quot;,&quot;Hatıran Yeter - (190₺)&quot;,&#xD;&#xA;&quot;Kolpaçino 4 4'lük - (180₺)&quot;&#xD;&#xA;}]" Title="Filmler">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[userInput]</OutArgument>
       </ui:InputDialog.Result>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -151,7 +151,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InterruptibleWhile>
-    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[userInput]" sap:VirtualizedContainerService.HintSize="496.8,233.6" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[userInput]" sap:VirtualizedContainerService.HintSize="496.8,556" sap2010:WorkflowViewState.IdRef="Switch`1_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -213,7 +213,7 @@ Derecelendirme : 8.1 /10
           </Assign.Value>
         </Assign>
       </Sequence>
-      <Sequence x:Key="Atatürk 1881 - 1919 - (220₺)" sap:VirtualizedContainerService.HintSize="400,276" sap2010:WorkflowViewState.IdRef="Sequence_7">
+      <Sequence x:Key="Atatürk 1881-1919 - (220₺)" sap:VirtualizedContainerService.HintSize="400,276" sap2010:WorkflowViewState.IdRef="Sequence_7">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -296,7 +296,7 @@ Derecelendirme : 4.3/10
         </Assign>
       </Sequence>
     </Switch>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Bilet Hak." sap:VirtualizedContainerService.HintSize="496.8,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Bilet Numaralarınız : &quot; +Environment.NewLine +&quot;----------&quot;+Environment.NewLine+&#xD;&#xA;String.Join(&quot;,&quot;+Environment.NewLine,ticketContainer)+&#xD;&#xA;Environment.NewLine +&quot;----------&quot;+Environment.NewLine+filmAbout+&#xD;&#xA;Environment.NewLine +&quot;----------&quot;+Environment.NewLine+&quot;Bilet Tutarınız : &quot;+Environment.NewLine+&#xD;&#xA;totalPrice.ToString+&quot;₺&quot;]">
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Bilet Hak." sap:VirtualizedContainerService.HintSize="496.8,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Bilet Numaralarınız : &quot; +Environment.NewLine +&quot;----------&quot;+Environment.NewLine+&#xA;String.Join(&quot;,&quot;+Environment.NewLine,ticketContainer)+&#xA;Environment.NewLine +&quot;----------&quot;+Environment.NewLine+filmAbout+&#xA;Environment.NewLine +&quot;----------&quot;+Environment.NewLine+&quot;Bilet Tutarınız : &quot;+Environment.NewLine+&#xA;totalPrice.ToString+&quot;₺&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
